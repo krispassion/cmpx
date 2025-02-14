@@ -1,101 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cristina | BIM & Architecture</title>
     <style>
+        /* Include Tailwind CSS here */
+        /* You can get this by extracting it from the built Next.js files */
+        /* For now, I'll include some basic styles to approximate the look */
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.5;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
         }
         header {
-            background-color: #f4f4f4;
-            padding: 1rem;
-            text-align: center;
+            background-color: #fff;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 1rem 0;
         }
         nav {
-            margin-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         nav a {
-            margin: 0 10px;
+            color: #4b5563;
             text-decoration: none;
-            color: #333;
-        }
-        main {
-            padding: 2rem;
+            margin-left: 1rem;
         }
         section {
-            margin-bottom: 2rem;
+            padding: 5rem 0;
         }
         h1, h2 {
-            color: #333;
+            font-weight: bold;
         }
-        .project {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            padding: 1rem;
+        h1 {
+            font-size: 2.25rem;
+        }
+        h2 {
+            font-size: 1.875rem;
             margin-bottom: 1rem;
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .badge {
+            background-color: #e5e7eb;
+            color: #4b5563;
+            padding: 0.25rem 0.5rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            margin-right: 0.5rem;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Cristina | BIM & Architecture</h1>
-        <nav>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Expertise</a>
-            <a href="#contact">Contact</a>
+        <nav class="container">
+            <a href="/" class="text-2xl font-bold">Cristina | BIM & Architecture</a>
+            <div>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Expertise</a>
+                <a href="#contact">Contact</a>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section id="hero">
-            <h1>Hi, I'm Cristina</h1>
-            <p>BIM Coordinator & Architect | Bridging Design and Technology</p>
+        <section id="hero" class="text-center">
+            <div class="container">
+                <h1>Hi, I'm Cristina</h1>
+                <p>BIM Coordinator & Architect | Bridging Design and Technology</p>
+                <p>Known for my patience, thoughtfulness, and meticulous attention to detail, I thrive on solving complex problems and creating innovative solutions in the world of architecture and BIM.</p>
+            </div>
         </section>
 
         <section id="projects">
-            <h2>My Projects</h2>
-            <div class="project">
-                <h3>Sustainable Office Complex</h3>
-                <p>A LEED-certified office building with integrated BIM workflow for efficient design and construction</p>
-            </div>
-            <div class="project">
-                <h3>Historic Building Renovation</h3>
-                <p>BIM-based restoration project of a 19th-century landmark, combining preservation with modern amenities</p>
-            </div>
-            <div class="project">
-                <h3>Smart City Infrastructure</h3>
-                <p>Comprehensive BIM model for urban planning, integrating transportation, utilities, and public spaces</p>
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="card">
+                    <h3>Sustainable Office Complex</h3>
+                    <p>A LEED-certified office building with integrated BIM workflow for efficient design and construction</p>
+                    <div>
+                        <span class="badge">Revit</span>
+                        <span class="badge">Navisworks</span>
+                        <span class="badge">AutoCAD</span>
+                    </div>
+                </div>
+                <!-- Add more project cards here -->
             </div>
         </section>
 
-        <section id="skills">
-            <h2>My Skills</h2>
-            <ul>
-                <li>Revit</li>
-                <li>AutoCAD</li>
-                <li>Navisworks</li>
-                <li>ArchiCAD</li>
-                <li>BIM Coordination</li>
-                <li>Architectural Design</li>
-                <li>Sustainable Design</li>
-            </ul>
+        <section id="skills" style="background-color: #f3f4f6;">
+            <div class="container">
+                <h2>My Skills</h2>
+                <div>
+                    <span class="badge">Revit</span>
+                    <span class="badge">AutoCAD</span>
+                    <span class="badge">Navisworks</span>
+                    <span class="badge">ArchiCAD</span>
+                    <!-- Add more skills here -->
+                </div>
+            </div>
         </section>
 
         <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Email: cristina@bimarchitect.com</p>
-            <p>Phone: +1 (234) 567-890</p>
-            <p>Location: New York City, USA</p>
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Email: cristina@bimarchitect.com</p>
+                <p>Phone: +1 (234) 567-890</p>
+                <p>Location: New York City, USA</p>
+            </div>
         </section>
     </main>
-
-    <footer>
-        <p>&copy; 2023 Cristina - BIM Coordinator & Architect. All rights reserved.</p>
-    </footer>
 </body>
 </html>
